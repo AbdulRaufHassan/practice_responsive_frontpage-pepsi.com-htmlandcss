@@ -1,8 +1,7 @@
 @font-face {
     font-family: sofia pro;
-    src: url(fonts/mainfont.ttf);
+    src: url(fonts/Sofia\ Pro\ Medium.ttf);
 }
-
 @media only screen and (min-width: 1600px) {
     header {
         width: 1700px !important;
@@ -882,14 +881,15 @@ header {
 }
 
 .sec4_figures span {
-    padding: 3px 0px 4px 0px;
+    padding: 0px 0px 4px 0px;
     background-color: #1437bf;
     margin: 0;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 15%;
     text-transform: uppercase;
-    text-align: center;
     font-family: sofia pro;
     font-size: medium;
     font-weight: bolder;
@@ -930,10 +930,11 @@ header {
     }
 }
 
-@media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 1023px) {
     .sec4_parentdiv {
-    height: auto;
+    height: 1138px;
     width: 100%;
+    position: relative;
     background-color: #265cc5;
     display: flex;
     flex-direction: column-reverse;
@@ -941,18 +942,48 @@ header {
 .sec4_subdiv1 {
     height: 1024px;
     width: 100%;
+    background-color: #265cc5;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    bottom: 0;
+    z-index: 1;
 
 }
 .sec4_figures {
     width: 95%;
-    height: 450px;
+    height: 46%;
+}
+.s4_fig1-margin {
+    margin-top: 0;
+}
+
+.s4_fig2-margin {
+    margin-bottom: 0;
+}
+.sec4_figures img {
+    height: 90%;
+}
+.sec4_figures span {
+    /* padding: 3px 0px 4px 0px; */
+    background-color: #1437bf;
+    margin: 0;
+    width: 100%;
+    height: 10%;
+    text-transform: uppercase;
+    font-family: sofia pro;
+    font-size: medium;
+    font-weight: bolder;
+    color: white;
 }
 .sec4_subdiv2 {
     width: 100%;
-    height: 660px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-size: 2738px;
+    background-position: 66% 0;
 }
-}
+}  
