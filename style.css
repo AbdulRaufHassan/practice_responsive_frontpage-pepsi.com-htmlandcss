@@ -12,6 +12,14 @@
         margin: 0 auto !important;
     }
 }
+@media only screen and (max-width: 260px) {
+   header{
+    min-width: auto !important;
+   }
+    body{
+        min-width: 300px;
+    }
+}
 
 .header_bg {
     background-color: #0065c3;
@@ -191,7 +199,7 @@
 
 header {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
 }
 
@@ -854,13 +862,13 @@ header {
 
 /* =========================section4 styling============================== */
 .sec4_parentdiv {
-    height: 560px;
+    height: 600px;
     width: 100%;
     background-color: #265cc5;
     display: flex;
 }
 .sec4_subdiv1 {
-    height: 560px;
+    height: 600px;
     width: 34%;
     display: flex;
     flex-direction: column;
@@ -906,13 +914,12 @@ header {
 
 .sec4_subdiv2 {
     width: 66%;
-    height: 560px;
-    background-color: rosybrown;
+    height: 600px;
     background-image: url(images/sec4_img3.jpg);
     background-repeat: no-repeat;
     position: relative;
-    background-size: 2085px;
-    background-position: 55% 0;
+    background-size: 205% 118%;
+    background-position: 56% 0;
 }
 
 .sec4_subdiv2 img {
@@ -923,16 +930,20 @@ header {
     right: 0px;
 }
 @media only screen and (max-width: 1250px) {
+    .sec4_subdiv2 {
+        background-size: 235% 100%;
+        background-position: 56% 0;       
+    }
     .sec4_figures {
         margin: 0px;
         width: 90%;
-        height: 45%;
+        height: 43%;
     }
 }
 
   @media only screen and (max-width: 1023px) {
     .sec4_parentdiv {
-    height: 1138px;
+    height: 130vh;
     width: 100%;
     position: relative;
     background-color: #265cc5;
@@ -940,7 +951,7 @@ header {
     flex-direction: column-reverse;
 }
 .sec4_subdiv1 {
-    height: 1024px;
+    height:88%;
     width: 100%;
     background-color: #265cc5;
     position: absolute;
@@ -953,7 +964,7 @@ header {
 
 }
 .sec4_figures {
-    width: 95%;
+    width: 90%;
     height: 46%;
 }
 .s4_fig1-margin {
@@ -983,7 +994,36 @@ header {
     height: 100%;
     position: absolute;
     top: 0;
-    background-size: 2738px;
-    background-position: 66% 0;
+    background-size: 273vw 100%;
+    background-position: 65% 0;
 }
 }  
+@media only screen and (max-width: 680px) {
+  
+  .sec4_subdiv2 {
+    background-size: 320vw 100%;
+    background-position: 65% 0;
+}
+}
+@media only screen and (max-width: 500px) {
+    .sec4_parentdiv {
+        height: 110vh;
+    }
+    .sec4_subdiv1 {
+        height: 66%;
+        width: 100%;
+        background-color: #265cc5;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        bottom: 0;
+        z-index: 1;
+    
+    }
+    .sec4_subdiv2 {
+        background-size: auto 60%;
+        background-position: 65% 0;
+    }
+}
