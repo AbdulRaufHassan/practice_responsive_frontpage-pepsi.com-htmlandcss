@@ -1,7 +1,8 @@
 @font-face {
     font-family: sofia pro;
-    src: url(fonts/Sofia\ Pro\ Medium.ttf);
+    src: url(../fonts/Sofia\ Pro\ Medium.ttf);
 }
+
 @media only screen and (min-width: 1600px) {
     header {
         width: 1700px !important;
@@ -12,11 +13,13 @@
         margin: 0 auto !important;
     }
 }
+
 @media only screen and (max-width: 260px) {
-   header{
-    min-width: auto !important;
-   }
-    body{
+    header {
+        min-width: auto !important;
+    }
+
+    body {
         min-width: 300px;
     }
 }
@@ -206,7 +209,7 @@ header {
 /* header complete */
 /* section1 start */
 .parentdiv1 {
-    background-image: url(images/img1_bg.png);
+    background-image: url(../images/img1_bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -217,7 +220,7 @@ header {
 }
 
 .bottle_img {
-    background-image: url(images/img1_bottleimg.png);
+    background-image: url(../images/img1_bottleimg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -447,7 +450,7 @@ header {
 }
 
 .blackcan {
-    background-image: url(images/img2_canimg.png);
+    background-image: url(../images/img2_canimg.png);
     background-size: cover;
     background-position: right -76px bottom;
     height: 100%;
@@ -519,7 +522,6 @@ header {
     }
 
     .blackcan {
-        background-image: url(images/img2_canimg.png);
         background-size: 700px;
         background-repeat: no-repeat;
         background-position: center;
@@ -578,7 +580,6 @@ header {
     }
 
     .blackcan {
-        background-image: url(images/img2_canimg.png);
         background-size: 700px;
         background-repeat: no-repeat;
         background-position: center;
@@ -644,7 +645,6 @@ header {
     }
 
     .blackcan {
-        background-image: url(images/img2_canimg.png);
         background-size: 500px;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -694,7 +694,7 @@ header {
 
 /* section3 */
 .sec3_parentdiv {
-    background-image: url(images/sec3_bgimg.png);
+    background-image: url(../images/sec3_bgimg.png);
     background-position: 50% center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -867,8 +867,9 @@ header {
     background-color: #265cc5;
     display: flex;
 }
+
 .sec4_subdiv1 {
-    height: 600px;
+    height: 100%;
     width: 34%;
     display: flex;
     flex-direction: column;
@@ -878,14 +879,14 @@ header {
 
 .sec4_figures {
     margin: 0px;
-    width: 80%;
-    height: 40%;
+    width: 390px;
+    height: 250px;
 }
 
 .sec4_figures img {
     width: 100%;
     height: 85%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .sec4_figures span {
@@ -914,8 +915,8 @@ header {
 
 .sec4_subdiv2 {
     width: 66%;
-    height: 600px;
-    background-image: url(images/sec4_img3.jpg);
+    height: 100%;
+    background-image: url(../images/sec4_img3.jpg);
     background-repeat: no-repeat;
     position: relative;
     background-size: 205% 118%;
@@ -929,101 +930,122 @@ header {
     bottom: 20px;
     right: 0px;
 }
+
 @media only screen and (max-width: 1250px) {
-    .sec4_subdiv2 {
-        background-size: 235% 100%;
-        background-position: 56% 0;       
-    }
-    .sec4_figures {
-        margin: 0px;
-        width: 90%;
-        height: 43%;
-    }
-}
-
-  @media only screen and (max-width: 1023px) {
     .sec4_parentdiv {
-    height: 130vh;
-    width: 100%;
-    position: relative;
-    background-color: #265cc5;
-    display: flex;
-    flex-direction: column-reverse;
-}
-.sec4_subdiv1 {
-    height:88%;
-    width: 100%;
-    background-color: #265cc5;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    bottom: 0;
-    z-index: 1;
-
-}
-.sec4_figures {
-    width: 90%;
-    height: 46%;
-}
-.s4_fig1-margin {
-    margin-top: 0;
-}
-
-.s4_fig2-margin {
-    margin-bottom: 0;
-}
-.sec4_figures img {
-    height: 90%;
-}
-.sec4_figures span {
-    /* padding: 3px 0px 4px 0px; */
-    background-color: #1437bf;
-    margin: 0;
-    width: 100%;
-    height: 10%;
-    text-transform: uppercase;
-    font-family: sofia pro;
-    font-size: medium;
-    font-weight: bolder;
-    color: white;
-}
-.sec4_subdiv2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background-size: 273vw 100%;
-    background-position: 65% 0;
-}
-}  
-@media only screen and (max-width: 680px) {
-  
-  .sec4_subdiv2 {
-    background-size: 320vw 100%;
-    background-position: 65% 0;
-}
-}
-@media only screen and (max-width: 500px) {
-    .sec4_parentdiv {
-        height: 110vh;
+        min-height: 46vw;
+        max-height: 46vw;
     }
+
     .sec4_subdiv1 {
-        height: 66%;
+        padding: 1rem 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .sec4_subdiv2 {
+        background-size: 217% 117%;
+        background-position: 58% 0;
+    }
+
+    .sec4_figures {
+        width: 100%;
+        height: 50%;
+    }
+
+    .s4_fig1-margin {
+        margin: 0 0 15px 0;
+    }
+
+    .s4_fig2-margin {
+        margin: 15px 0 0 0;
+    }
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .sec4_parentdiv {
+        min-height: 127vw;
+        max-height: 129vw;
+        width: 100%;
+        position: relative;
+    }
+
+    .sec4_subdiv1 {
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        height: 90%;
         width: 100%;
         background-color: #265cc5;
         position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         bottom: 0;
         z-index: 1;
-    
     }
+
+    .sec4_figures {
+        width: 100%;
+        height: 49%;
+    }
+
+    .s4_fig1-margin {
+        margin: 0;
+    }
+
+    .s4_fig2-margin {
+        margin: 0;
+    }
+
+    .sec4_figures img {
+        height: 90%;
+    }
+
+    .sec4_figures span {
+        width: 100%;
+        height: 10%;
+    }
+
     .sec4_subdiv2 {
-        background-size: auto 60%;
-        background-position: 65% 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-size: 273vw 100%;
+        background-position: 65% -20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sec4_figures img {
+        height: 87%;
+    }
+
+    .sec4_figures span {
+        height: 13%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sec4_parentdiv {
+        min-height: 177vw;
+        max-height: 177vw;
+    }
+
+    .sec4_subdiv1 {
+        height: 70%;
+        width: 100%;
+    }
+
+    .sec4_subdiv2 {
+        background-size: 295%;
+        background-position: 67% top;
+    }
+
+    .sec4_figures img {
+        height: 85%;
+    }
+
+    .sec4_figures span {
+        padding: 0;
+        height: 15%;
+        font-size: small;
     }
 }
